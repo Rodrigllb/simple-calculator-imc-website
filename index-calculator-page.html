@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página - Calculadora</title>
+    <link rel="shortcut icon" href="assets/style/image/favicon/favicon-calculator-imc.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style/style-calculator-page.css">
+</head>
+<body>
+    <div id="container">
+        <header class="container-header">
+            <a href="index-home-page.html"><img src="assets/style/image/header-logo-white-simple-calc-web.png" alt="logo"></a>
+        </header>
+        <nav class="menu-floating">
+            <a href="index-home-page.html">Inicio</a>
+            <a href="#">Suporte</a>
+            <a href="#">Sobre</a>
+        </nav>
+        <main class="container-contentMain">
+            
+            <div class="element-statusIMC">
+                <output id="statusIMC">
+                    <!--Status de IMC para o usuário.-->
+                    <p>Sua Calculadora IMC</p>
+                </output>
+            </div>
+            <section class="element-interfaceCalculator">
+                <p>IMC = peso / (altura * altura)</p>
+                <label for="peso">Digite seu peso &#40;Kg&#41;</label>
+                <input id="peso" type="text">
+                <label for="altura">Digite sua altura &#40;m&#41;</label>
+                <input id="altura" type="text">
+                <div class="element-output">
+                    <p>Seu IMC: </p>
+                    <output id="resultados">0</output>
+                </div>               
+            </section>
+          
+        </main>
+    </div>
+
+    <script src="assets/script/calculatorScript.js"></script>
+</body>
+</html>
