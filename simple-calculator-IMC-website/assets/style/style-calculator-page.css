@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&family=Poppins:wght@100;200;300&display=swap');
+
+/*Reset css*/
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*Configurações globais do estilo da calculadora.*/
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    background-color: #252525;
+    color: #fff;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 300; 
+  }
+  
+  p {
+    font-size: 12pt;
+    font-weight: 200;
+    text-align: justify;
+  }
+
+#container{ /*Container principal da página*/
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.container-header{ /*Container do header do site*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: #252525; 
+}
+
+.menu-floating{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 18px;
+}
+.menu-floating a{
+  transition:  0.7s ease;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 9px;
+  margin: 0px 17px 0px 17px;
+  color: #ffffff;
+
+}
+.menu-floating a:hover{
+  transition: 0.7s ease;
+  color: #252525;
+  background-color: #ffffff;
+}
+
+
+.container-contentMain{ /*Container de configurações do conteudo principal da pagina.*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.element-statusIMC{ /*Elemento que mostrará o status de seu IMC*/
+  transition: 0.7s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  width: 30em;
+  height: 9em;
+  padding: 15px;
+  border-radius: 7px;
+  background-color: #0f0f0f;
+ 
+}
+.element-statusIMC:hover{
+  transition: 0.7s ease;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.element-statusIMC output{
+  text-align: justify;
+}
+
+
+.element-interfaceCalculator{ /*Interface  da calculadora*/
+  transition: 0.8s ease;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: normal;
+  width: 30em;
+  height: auto;
+  margin: 0;
+  padding: 15px;
+  border-radius: 6px;
+
+}
+
+.element-interfaceCalculator h2{
+  margin: 0;
+
+}
+.element-interfaceCalculator input{
+  width: 35em;
+  height: auto;
+  margin: 9px 0px 9px 0px;
+  padding: 6px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  background-color: #dddddd;
+}
+.element-output{ /*Elemento da interface da saida do resultado do calculo de imc.*/
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 9px 0px 9px 0px;
+
+}
+.element-output output{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+  height: 2em;
+  font-weight: 500;
+  border-radius: 3px;
+}
+
+
+/***********************Responsividade*********************/
+
+@media (max-width: 1090px){
+  .container-header{ /*Mantém o header do tamanho determinado.*/
+
+    width: 800px;
+  }
+
+  .menu-floating{
+    width: 500px;
+  }
+
+  .container-contentMain{
+    
+    flex-direction: column;
+    justify-content: center;
+    width: 480px;
+    height: auto;
+  }
+
+  .element-interfaceCalculator{
+    width: 275px;
+    height: 27em;
+    padding: 64px;
+
+  }
+  .element-interfaceCalculator label{
+    width: 225px;
+  }
+  .element-interfaceCalculator input{
+    width: 263px;
+  }
+
+
+  .element-statusIMC {
+    width: 275px;
+  }
+
+  
+  
+}
+
+/*Tamanho para dispositivos razoavelmente grandes*/
+@media (max-width: 650px){
+  .container-header{ /*Mantém o header do tamanho determinado.*/
+
+    width: 500px;
+  }
+
+  .menu-floating{
+    width: 500px;
+  }
+
+  .container-contentMain{
+    
+    flex-direction: column;
+    justify-content: center;
+    width: 480px;
+    height: auto;
+  }
+
+  .element-interfaceCalculator{
+    width: 275px;
+    height: 27em;
+    padding: 64px;
+
+  }
+  .element-interfaceCalculator label{
+    width: 225px;
+  }
+  .element-interfaceCalculator input{
+    width: 263px;
+  }
+
+
+  .element-statusIMC {
+    width: 275px;
+  }
+  
+}
+
+
+/*Ainda considerável para telas pequenas*/
+@media (max-width: 600px){
+
+  .container-header{ /*Mantém o header do tamanho determinado.*/
+
+    width: 500px;
+  }
+
+  .menu-floating{
+    width: 500px;
+  }
+
+  .container-contentMain{
+    
+    flex-direction: column;
+    justify-content: center;
+    width: 480px;
+    height: auto;
+  }
+
+
+  .element-interfaceCalculator{
+    width: 275px;
+    height: 27em;
+    padding: 32px;
+
+  }
+  .element-interfaceCalculator label{
+    width: 225px;
+  }
+  .element-interfaceCalculator input{
+    width: 263px;
+  }
+  
+
+  .element-statusIMC {
+    width: 275px;
+  }
+  
+
+}
+
+/*Esse é um tamanho comum usado para dispositivos móveis de tela pequena em modo retrato.*/
+@media(max-width: 480px){
+
+  .container-header{ /*Mantém o header do tamanho determinado.*/
+
+    width: 480px;
+  }
+
+  .menu-floating{
+    width: 300px;
+  }
+
+
+  .container-contentMain{
+    
+    flex-direction: column;
+    justify-content: center;
+    width: 480px;
+    height: auto;
+  }
+
+
+  .element-interfaceCalculator{
+    width: 275px;
+    height: 27em;
+    padding: 32px;
+
+  }
+  .element-interfaceCalculator label{
+    width: 225px;
+  }
+  .element-interfaceCalculator input{
+    width: 263px;
+  }
+  .element-statusIMC {
+    width: 275px;
+  }
+  
+
+}
+
+/*Dispositivos de tamanho da tela do iPhone 6 Plus, 7 Plus, 8 Plus e X/XS/11 Pro em modo retrato.*/
+@media (max-width: 414px){
+
+  .container-header{ /*Mantém o header do tamanho determinado.*/
+
+    width: 414px;
+  }
+
+  .menu-floating{
+    width: 300px;
+  }
+
+
+  .container-contentMain{
+    
+    flex-direction: column;
+    justify-content: center;
+    width: 320px;
+    height: auto;
+  }
+
+  .element-interfaceCalculator{
+    width: 275px;
+    height: 27em;
+    padding: 16px;
+
+  }
+  .element-interfaceCalculator label{
+    width: 225px;
+  }
+  .element-interfaceCalculator input{
+    width: 263px;
+  }
+
+  .element-statusIMC {
+    width: 275px;
+  }
+  
+
+}
+
+/*Dispositivos de tamanho da tela do iPhone 6, 7, 8 e SE de primeira geração em modo retrato.*/
+@media (max-width: 375px){
+  
+  .container-header{ /*Mantém o header do tamanho determinado.*/
+
+    width: 375px;
+  }
+
+  .menu-floating{
+    width: 200px;
+  }
+
+
+  .container-contentMain{
+    
+    flex-direction: column;
+    justify-content: center;
+    width: 320px;
+    height: auto;
+  }
+
+  .element-interfaceCalculator{
+    width: 275px;
+    height: 27em;
+    padding: 16px;
+
+  }
+  .element-interfaceCalculator label{
+    width: 225px;
+  }
+  .element-interfaceCalculator input{
+    width: 263px;
+  }
+
+  .element-statusIMC {
+    width: 275px;
+  }
+  
+}
+
+@media (max-width: 320px){ /*Dispositivos moveis mais simples em modo retrato.*/
+  
+  .container-header{ /*Mantém o header do tamanho determinado.*/
+
+    width: 320px;
+  }
+
+  .menu-floating{
+    width: 200px;
+  }
+
+  .container-contentMain{
+    
+    flex-direction: column;
+    justify-content: center;
+    width: 320px;
+    height: auto;
+  }
+
+  .element-interfaceCalculator{
+    width: 275px;
+    height: 27em;
+    padding: 4px;
+
+  }
+  .element-interfaceCalculator label{
+    width: 225px;
+  }
+  .element-interfaceCalculator input{
+    width: 263px;
+  }
+
+  .element-statusIMC {
+    width: 275px;
+  }
+}
