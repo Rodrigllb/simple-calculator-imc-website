@@ -3,7 +3,6 @@ Um simples website com objetivo de calcular o IMC (índice de massa corporal) at
 ![View website IMC-calculator](simple-calculator-IMC-website/assets/style/image/gif-readme/gif-website-view.gif)
 # Alguns detalhes do projeto:
 - A página inicial é composta por um designer simplificado com cores entre preto, branco e cinza escuro.
-- Há um simples menu de links de navegação com links que direcionam o usuário ao "inicio, suporte(fictício) e o sobre".
 - Há uma descrição inicial de "o que é o IMC?" e uma recomendação relativo a confiabilidade unica no calculo realizado, visando a importância de consultar um profissional médico especializado.
 - Para que o usuário seja direcionado a página do calculo é necessário apertar o botão presente ao lado da imagem representativa de um homem realizando exercicios, onde esse botão quando 'apertado' realiza a chamada de uma função para realizar a determinada interatividade.
 # Detalhes da calculadora:
