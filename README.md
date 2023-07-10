@@ -1,6 +1,6 @@
 # simple-calculator-imc-website (Beta)
 Um simples website com objetivo de calcular o IMC (índice de massa corporal) atráves de uma simples calculadora desenvolvida em JS, onde mostra o status de massa corporal do usuário.
-![View website IMC-calculator](assets/image/gif-readme/gif-website-view.gif)
+![View website IMC-calculator](simple-calculator-IMC-website/assets/style/image/gif-readme/gif-website-view.gif)
 # Alguns detalhes do projeto:
 - A página inicial é composta por um designer simplificado com cores entre preto, branco e cinza escuro.
 - Há um simples menu de links de navegação com links que direcionam o usuário ao "inicio, suporte(fictício) e o sobre".
