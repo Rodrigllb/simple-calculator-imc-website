@@ -1,5 +1,5 @@
 
-function executeCalcIMC(){
+function executeCalcIMC(){ /*Realiza-se a chamada da função  "executeCalcIMC()"*/
     var peso = parseFloat(document.getElementById('peso').value);
     var altura = parseFloat(document.getElementById('altura').value);
 
