@@ -45,30 +45,6 @@ p {
   background-color: #252525; /* Cor de fundo com transparência */
 }
 
-.menu-floating{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  padding: 18px;
-}
-.menu-floating a{
-  transition:  0.7s ease;
-  text-decoration: none;
-  font-weight: 400;
-  padding: 9px;
-  margin: 0px 17px 0px 17px;
-  color: #252525;
-
-}
-.menu-floating a:hover{
-  transition: 0.7s ease;
-  color: #fff;
-  background-color: #252525;
-}
-
 .container-contentMain{ /*Container do conteúdo principal do site.*/
   display: flex;
   flex-direction: column;
@@ -443,7 +419,6 @@ p {
     
   }
 
-
   .element-copyright{
     flex-direction: column;
     justify-content: center;
@@ -503,10 +478,9 @@ p {
 @media (max-width: 320px){ /*Dispositivos moveis mais simples em modo retrato.*/
   
   .container-header{ /*Mantém o header do tamanho determinado.*/
-
     width: 320px;
   }
-
+  
   .container-contentMain{
     
     flex-direction: column;
