@@ -20,15 +20,12 @@ function executeCalcIMC(){ /*Realiza-se a chamada da função  "executeCalcIMC()
       } else if(imc >= 25.0 && imc <= 29.9){
         document.getElementById('statusIMC').textContent = 'Você está em sobrepeso!';
       } else if(imc >= 30.0 && imc <= 34.9){
-        document.getElementById('statusIMC').textContent = 'Você está em Obesidade Grau I! Nivel inicial de riscos para a saúde.';
+        document.getElementById('statusIMC').textContent = 'Você está em Obesidade Grau I! Nivel inicial de riscos para a sua saúde.';
       } else if(imc >= 35.0 && imc <= 39.9){
         document.getElementById('statusIMC').textContent = 'Você está em Obesidade Grau II! Nivel intermediário de riscos para a sua saúde.';
       } else if(imc >= 40.0){
-        document.getElementById('statusIMC').textContent = 'Você está em Obesidade Grau III! Procure um médico o quanto antes! Permanecer em obesidade morbida por longos períodos pode acarretar vários riscos a saúde podendo levar a obito.';
+        document.getElementById('statusIMC').textContent = 'Você está em Obesidade Grau III! Procure um médico o quanto antes! Permanecer em obesidade morbida por longos períodos pode acarretar vários riscos a sua saúde e consequentemente a morte!';
       }
-
-
-
 }
 
 /*São ouvintes de eventos aos elementos com os IDs "peso" e "altura". Quando um evento keyup (quando uma tecla é liberada) ocorrer em qualquer um desses elementos, a função executeCalcIMC será chamada.*/
